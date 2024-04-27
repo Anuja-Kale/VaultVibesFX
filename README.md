@@ -21,6 +21,23 @@ Ensure you have Node.js and npm installed on your machine, and a modern web brow
    ```bash
    git clone https://github.com/Anuja-Kale/VaultVibesFX.git
 
+   # Configuration Instructions
+
+## Setting Up Your env.properties File
+
+Before you can run the VaultVibes application, you need to create a personal `env.properties` file that the application will use for its configuration. This file must be located in the root directory of the project.
+
+Here's what you need to add to your `env.properties` file:
+
+```properties
+SENDER_EMAIL=<your-sender-email>
+SENDER_PASSWORD=<your-sender-email-password>
+JDBC_DRIVER=<your-JDBC-driver-class>
+DB_URL=<your-database-URL>
+DB_USERNAME=<your-database-username>
+DB_PASSWORD=<your-database-password>
+
+
 
    
 
