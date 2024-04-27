@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TransferExisingBenAnchorPaneController">
+   <children>
+      <AnchorPane layoutX="-94.0" layoutY="-109.0" prefHeight="300.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" style="-fx-text-fill: white; -fx-background-color: black;">
+         <children>
+            <ComboBox fx:id="cbBenName" layoutX="220.0" layoutY="60.0" onAction="#displayAddedBeneficiaryNames" prefHeight="37.0" prefWidth="249.0" promptText="Choose Benificiary Email" style="-fx-border-color: #d90429;" />
+            <ComboBox fx:id="cbBenAccNums" layoutX="220.0" layoutY="110.0" onAction="#displayBeneficiaryAccNumbers" prefHeight="37.0" prefWidth="247.0" promptText="Choose Benificiary Account Number" style="-fx-border-color: #d90429;"/>
+            <TextField fx:id="txtAmount" layoutX="220.0" layoutY="210.0" prefHeight="26.0" prefWidth="249.0" promptText="Enter Amount" style="-fx-border-color: #d90429;">
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button fx:id="btnTransferFunds" layoutX="325.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleTransferFundsAction" style="-fx-background-color: #d90429;" text="Transfer Funds" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="btnResetEmail" layoutX="488.0" layoutY="57.0" mnemonicParsing="false" onAction="#clearSelectedEmailValue" style="-fx-background-color: #d90429;" text="Reset Beneficiary Email" textFill="#f8f6f6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="btnResetAcctNum" layoutX="488.0" layoutY="107.0" mnemonicParsing="false" onAction="#clearSelectedAccountNumberValue" style="-fx-background-color: #d90429;" text="Reset Account Number" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <ComboBox fx:id="cbCurrentUserAcctNum" layoutX="219.0" layoutY="160.0" onAction="#displayCurrentUserAccountNumbers" prefHeight="37.0" prefWidth="249.0" promptText="Choose Your Account Number" style="-fx-border-color: #d90429;"/>
+            <Button fx:id="btnResetCurrentUserAcctNum" layoutX="488.0" layoutY="160.0" mnemonicParsing="false" onAction="#clearSelectedCurrentUserAccountNumberValue" style="-fx-background-color: #d90429;" text="Reset Account Number" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label layoutX="257.0" layoutY="10.0" prefHeight="37.0" prefWidth="370.0" text="Make a Beneficiary Transfer" textFill="white">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="64.0" text="Beneficiary Email" textFill="white">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="115.0" text="Beneficiary Acct No" textFill="white">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="168.0" text="Your Acct No" textFill="white">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

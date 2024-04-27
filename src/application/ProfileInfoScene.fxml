@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-text-fill: white; -fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfileInfoSceneController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="1.0" minHeight="800.0" minWidth="1500.0" prefHeight="810.0" prefWidth="1510.0" style="-fx-border-radius: 20px; -fx-text-fill: white; -fx-background-color: black;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Label fx:id="lblHome" alignment="CENTER" contentDisplay="CENTER" layoutX="517.0" layoutY="43.0" prefHeight="54.0" prefWidth="463.0" text="Your Profile" textFill="white">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" layoutX="1371.0" layoutY="52.0" mnemonicParsing="false" onAction="#handleLogoutAction" style="-fx-background-color: #d90429;" text="Logout" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="btnGoBack" layoutX="1240.0" layoutY="51.0" mnemonicParsing="false" onAction="#invokeHomeSceneLayout" style="-fx-background-color: #d90429;" text="Home" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Label fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" layoutX="475.0" layoutY="143.0" prefHeight="18.0" prefWidth="53.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" editable="false" layoutX="468.0" layoutY="178.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Name" style="-fx-border-color: #d90429;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblEmail" alignment="CENTER" contentDisplay="CENTER" layoutX="471.0" layoutY="233.0" prefHeight="18.0" prefWidth="53.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" editable="false" layoutX="467.0" layoutY="267.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Email" style="-fx-border-color: #d90429;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Label fx:id="lblPhone" alignment="CENTER" contentDisplay="CENTER" layoutX="473.0" layoutY="323.0" prefHeight="26.0" prefWidth="64.0" text="Phone">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhone" layoutX="470.0" layoutY="350.0" prefHeight="47.0" prefWidth="529.0" promptText="Enter Phone Number" style="-fx-border-color: #d90429;">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <Button fx:id="btnChangePassword" layoutX="1049.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleChangePasswordAction" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #d90429;" text="Update Password" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnChangeNumber" alignment="CENTER" layoutX="1056.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleChangeNumberAction" prefHeight="42.0" prefWidth="177.0" style="-fx-background-color: #d90429;" text="Update Phone" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <AnchorPane fx:id="anchorPaneChangePassword" layoutX="533.0" layoutY="502.0" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: black;" />
+            <Button fx:id="btnRequestCreditCardUpgrade" layoutX="661.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleRequestCreditCardUpgradeAction" prefHeight="46.0" prefWidth="272.0" style="-fx-background-color: #d90429;" text="Request For New Credit Card" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnChangeName" layoutX="1047.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleChangeNameAction" prefHeight="41.0" prefWidth="179.0" style="-fx-background-color: #d90429;" text="Update Name" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnViewCreditScore" layoutX="957.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleViewCreditScoreAction" prefHeight="49.0" prefWidth="189.0" style="-fx-background-color: #d90429;" text="View Credit Score" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNewSavingsAccount" layoutX="366.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleOpenNewSavingsAccountAction" prefHeight="46.0" prefWidth="272.0" style="-fx-background-color: #d90429;" text="Open New Savings Vault" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

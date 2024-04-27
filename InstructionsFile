@@ -1,0 +1,14 @@
+To successfully run the project, follow these steps:
+
+1. Run the project from eclipse with following arguments required for JavaFX   --add-modules javafx.controls,javafx.fxml 
+2. During registration, provide a valid email address as email verification is required for further steps.
+3. Log in using the registered email and password.
+4. Upon logging in, users will access four distinct sections:
+	•Profile
+	•Vault (Transactions)
+	•Payments
+	•Vault-to-Vault (Transfers)
+5. Users can execute various operations such as depositing funds, making payments, or transferring money to beneficiaries.
+6. All transactions can be viewed in the Vault section.
+7. The Deposits can be made in Vault-to-Vault section.
+8. For Transfer to new or existing Beneficiary, the receiver should be registered on VaultVibes as well.
