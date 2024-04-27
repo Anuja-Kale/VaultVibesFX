@@ -21,7 +21,7 @@ Ensure you have Node.js and npm installed on your machine, and a modern web brow
    ```bash
    git clone https://github.com/Anuja-Kale/VaultVibesFX.git
 
-   # Configuration Instructions
+ # Configuration Instructions
 
 ## Setting Up Your env.properties File
 
@@ -36,8 +36,6 @@ JDBC_DRIVER=<your-JDBC-driver-class>
 DB_URL=<your-database-URL>
 DB_USERNAME=<your-database-username>
 DB_PASSWORD=<your-database-password>
-
-
 
    
 
